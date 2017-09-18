@@ -50,6 +50,13 @@ export default class MobclickAgent{
     static onLogPageViewInseconds(pageName,du = 0){
         umengClient.logPageView(pageName,du);
     }
+    
+      static onEvent(eventId){
+
+      
+        umengClient.onEvent(eventId);
+
+    }
 
     static onEvent(eventId,dataMap = undefined,counter = undefined){
 
